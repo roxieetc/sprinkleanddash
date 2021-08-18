@@ -1,13 +1,58 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+.Header {
+  background-color: rgb(108, 228, 192);
+  overflow: hidden;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.appTitle {
+  float: left;
+  font-family: "Style Script", cursive;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 0px 15px;
+  text-decoration: none;
+  font-size: 48px;
+}
+
+.headerRight {
+  float: right;
+  padding: 4rem;
+}
+
+.headerRight button {
+  border: none;
+  border-radius: 10px;
+  background-color: lightseagreen;
+  color: white;
+  padding: 5px 10px;
+  margin: 0px 0px 0px 10px;
+}
+
+.headerRight input {
+  border: none;
+  padding: 5px 10px;
+  border-radius: 15px;
+}
+
+.Nav {
+  height: calc(100% - 162px);
+  width: 180px;
+  color: rgb(19, 107, 103);
+  text-align: center;
+  float: left;
+  position: fixed;
+  z-index: 0;
+  bottom: 0;
+  background-color: rgb(198, 248, 233);
+  overflow-x: hidden;
+  padding-top: 1px;
+  margin-top: 10px;
+}
+
+.Main {
+  text-align: center;
+}
+
+.Recipes {
+  text-align: center;
 }

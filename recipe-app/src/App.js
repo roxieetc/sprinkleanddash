@@ -5,12 +5,10 @@ import Nav from './Components/Nav';
 import Recipes from './Components/Recipes';
 
 function App() {
+
   return (
     <div className="App">
-    <Header />
-    <Nav />
     <Main />
-    <Recipes />
     </div>
   );
 }

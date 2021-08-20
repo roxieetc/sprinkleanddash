@@ -1,3 +1,10 @@
+body {
+  /* background: linear-gradient(to top, #dffdf3, #ffffff); */
+  background-attachment: fixed;
+  color: rgb(49, 78, 77);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
 .Header {
   background-color: rgb(108, 228, 192);
   overflow: hidden;
@@ -20,28 +27,9 @@
   background-color: lightseagreen;
   padding: 10px 5px;
 }
-.navLinks {
-  margin-left: 20px;
-}
-
-.navLinks a {
-  float: left;
-  display: flex;
-  justify-content: space-evenly;
-  color: white;
-  text-align: center;
-  text-decoration: none;
-  font-size: 24px;
-  margin: 0px 10px;
-}
-
-.navLinks a:hover {
-  text-decoration: underline;
-}
 
 .form-horizontal {
-  float: right;
-  margin-right: 10px;
+  text-align: center;
 }
 
 input {
@@ -53,30 +41,35 @@ input {
 }
 
 button {
-  float: right;
-  padding: 3px 5px;
-  font-size: 18px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  background-color: rgb(255, 255, 255);
+  color: #666666;
+  padding: 5px 15px;
+  font-size: 16px;
   border: none;
   border-radius: 10px;
 }
 
-.meals {
+.mealContainer {
   text-align: center;
-  max-width: 500px;
+  max-width: 400px;
+  max-height: 500px;
+  overflow: auto;
   margin: auto;
-}
-
-.meals h1 {
-  font-size: 50px;
+  margin-top: 80px;
+  border: solid 3px rgb(146, 185, 178);
+  border-radius: 15px;
+  padding: 5px 25px;
+  background: linear-gradient(to top, #dffdf3, #ffffff);
 }
 
 .meals img {
-  max-width: 500px;
+  max-width: 300px;
+  border-radius: 25px;
 }
 
 .meals h2 {
-  font-size: 35px;
-  text-decoration: underline;
+  font-size: 30px;
 }
 
 ::placeholder {

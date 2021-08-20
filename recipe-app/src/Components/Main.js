@@ -19,14 +19,13 @@ const Main = () => {
 
   return (
      <section className="meals">
-       <h1>Welcome!</h1>
-       <p>Here's a random meal:</p>
        {randomMeal.map((recipe) => {
-         const {idMeal, strMeal, strInstructions, strMealThumb} = recipe
+         const {idMeal, strMeal, strArea, strInstructions, strMealThumb} = recipe
 
          return (
-           <article key={idMeal}>
+           <article className="mealContainer" key={idMeal}>
              <h2>{strMeal}</h2>
+             <h3>({strArea})</h3>
              <img src={strMealThumb} alt={strMeal} />
              <p>{strInstructions}</p>
            </article>

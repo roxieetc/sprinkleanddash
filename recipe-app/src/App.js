@@ -2,7 +2,7 @@ import React from 'react';
 import Main from './Components/Main';
 import Header from './Components/Header';
 import SearchForm from './Components/SearchForm';
-import Recipes from './Components/Recipes';
+import Categories from './Components/Categories'
 
 function App() {
 
@@ -11,8 +11,8 @@ function App() {
     
     <Header />
     <SearchForm />
-    {/* <Recipes /> */}
     <Main />
+    <Categories />
     </div>
   );
 }

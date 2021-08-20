@@ -1,59 +1,84 @@
 .Header {
   background-color: rgb(108, 228, 192);
   overflow: hidden;
+  height: 150px;
 }
 
 .appTitle {
-  float: left;
   font-family: "Style Script", cursive;
   display: block;
   color: white;
   text-align: center;
-  padding: 0px 15px;
+  margin: 25px 0px 0px 0px;
   text-decoration: none;
-  font-size: 48px;
+  font-size: 75px;
   cursor: pointer;
 }
 
-.headerRight {
-  float: right;
-  padding: 4rem;
+.navBar {
+  overflow: hidden;
+  background-color: lightseagreen;
+  padding: 10px 5px;
+}
+.navLinks {
+  margin-left: 20px;
 }
 
-.headerRight button {
+.navLinks a {
+  float: left;
+  display: flex;
+  justify-content: space-evenly;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  font-size: 24px;
+  margin: 0px 10px;
+}
+
+.navLinks a:hover {
+  text-decoration: underline;
+}
+
+.form-horizontal {
+  float: right;
+  margin-right: 10px;
+}
+
+input {
+  padding: 7px 10px;
+  width: 400px;
+  margin-right: 10px;
   border: none;
   border-radius: 10px;
-  background-color: lightseagreen;
-  color: white;
-  padding: 5px 10px;
-  margin: 0px 0px 0px 10px;
 }
 
-.headerRight input {
+button {
+  float: right;
+  padding: 3px 5px;
+  font-size: 18px;
   border: none;
-  padding: 5px 10px;
-  border-radius: 15px;
+  border-radius: 10px;
 }
 
-.Nav {
-  height: calc(100% - 162px);
-  width: 180px;
-  color: rgb(19, 107, 103);
+.meals {
   text-align: center;
-  float: left;
-  position: fixed;
-  z-index: 0;
-  bottom: 0;
-  background-color: rgb(198, 248, 233);
-  overflow-x: hidden;
-  padding-top: 1px;
-  margin-top: 10px;
+  max-width: 500px;
+  margin: auto;
 }
 
-.Main {
-  text-align: center;
+.meals h1 {
+  font-size: 50px;
 }
 
-.Recipes {
-  text-align: center;
+.meals img {
+  max-width: 500px;
+}
+
+.meals h2 {
+  font-size: 35px;
+  text-decoration: underline;
+}
+
+::placeholder {
+  color: rgb(168, 167, 167);
 }

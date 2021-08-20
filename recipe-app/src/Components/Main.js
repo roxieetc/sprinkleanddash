@@ -1,3 +1,4 @@
+//Component that renders main page with random recipe generator
 import React, { useState, useEffect } from 'react';
 
 const url = 'https://www.themealdb.com/api/json/v1/1/random.php'
@@ -5,7 +6,7 @@ const url = 'https://www.themealdb.com/api/json/v1/1/random.php'
 const Main = () => {
   const [randomMeal, setRandomMeal] = useState([])
 
-  const fetchFood = async () => {
+  const fetchRecipes = async () => {
     const response = await fetch(url)
     const data = await response.json()
     console.log(data.meals)
@@ -13,11 +14,13 @@ const Main = () => {
   }
 
   useEffect(() => {
-    fetchFood()
+    fetchRecipes()
   }, [])
 
   return (
      <section className="meals">
+       <h1>Welcome!</h1>
+       <p>Here's a random meal:</p>
        {randomMeal.map((recipe) => {
          const {idMeal, strMeal, strInstructions, strMealThumb} = recipe
 

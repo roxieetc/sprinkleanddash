@@ -74,14 +74,15 @@ button {
 
 .mealContainer {
   text-align: center;
-  max-width: 400px;
+  max-width: 60vw;
   max-height: 500px;
   overflow: auto;
   margin: auto;
   margin-top: 80px;
   border: solid 3px rgb(146, 185, 178);
   border-radius: 15px;
-  padding: 5px 25px;
+  padding: 0px 25px;
+  padding-bottom: 25px;
   background: linear-gradient(to top, #dffdf3, #ffffff);
 }
 
@@ -95,10 +96,17 @@ button {
 .meals img {
   max-width: 300px;
   border-radius: 25px;
+  float: left;
+  padding-right: 25px;
 }
 
 .meals h2 {
   font-size: 30px;
+}
+
+.meals p {
+  max-width: 500px;
+  float: right;
 }
 
 /* CATEOGORIES STYLING */
@@ -110,7 +118,7 @@ button {
   align-items: center;
   justify-content: center;
   width: 100%;
-  height: 110vh;
+  height: 70vh;
 }
 
 .catContainer {
@@ -120,7 +128,7 @@ button {
   overflow: auto;
   margin: auto;
   margin-top: 80px;
-  border: solid 3px rgb(146, 185, 178);
+  border: solid 1px rgb(146, 185, 178);
   border-radius: 15px;
   padding-bottom: 15px;
   margin: 20px 10px;
@@ -132,4 +140,15 @@ button {
   max-width: 250px;
   border-radius: 15px;
   padding: 0px 10px;
+}
+
+.footer {
+  position: fixed;
+  font-size: 12px;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  color: rgb(151, 204, 201);
+  text-align: center;
+  height: 45px;
 }

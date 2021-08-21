@@ -3,7 +3,7 @@ import React, { useState, useEffect } from 'react';
 
 const url = 'https://www.themealdb.com/api/json/v1/1/random.php'
 
-const Main = () => {
+const Random = () => {
   const [randomMeal, setRandomMeal] = useState([])
 
   const fetchRecipes = async () => {
@@ -31,9 +31,10 @@ const Main = () => {
            </article>
          )
        })}
-       </section> 
+       </section>
+       
   );
 }
 
 
-export default Main;
+export default Random;

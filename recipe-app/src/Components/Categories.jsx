@@ -3,30 +3,32 @@ import React, { useState, useEffect } from 'react';
 
 
 function Categories() {
-  const [category, setCategory] = useState([])
-
-  const fetchRecipes = async () => {
-    const response = await fetch('https://www.themealdb.com/api/json/v1/1/list.php?c=list')
-    const data = await response.json()
-    console.log(data.meals)
-    setCategory(data.meals)  
-  }
+  const [images, setImages] = useState([]);
 
   useEffect(() => {
-    fetchRecipes()
-  }, [])
+    getImages();
+  }, []);
+
+  const getImages = async () => {
+    const response = await fetch(`https://www.themealdb.com/api/json/v1/1/categories.php`)
+    const data = await response.json()
+    console.log(data.categories)
+    setImages(data.categories)
+  }
 
 
   return (
-    <section className="meals">
-      {category.map((recipe) => {
+    <section className="categories">
+     {images.map((recipe) => {
+         const {idCategory, strCategory, strCategoryThumb} = recipe
 
-        return (
-          <div className="catContainer">
-            <h3></h3>
-          </div>
-        )
-      })}
+         return (
+           <article className="catContainer" key={idCategory}>
+             <h2>{strCategory}</h2>
+             <img src={strCategoryThumb} alt={strCategory} />
+           </article>
+         )
+       })}
       </section> 
  );
 }

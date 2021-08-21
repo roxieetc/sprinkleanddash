@@ -18,7 +18,7 @@ const App = () => {
     <Nav />
     {/* <SearchForm />
     <SearchResults /> */}
-    {/* <Random /> */}
+    <Route exact path ='/random' component={Random} />
     <Route exact path='/categories' component={Categories}/>
     </Router>
     </div>

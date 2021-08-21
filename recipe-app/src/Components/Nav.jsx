@@ -11,6 +11,10 @@ function Nav() {
       <Link to='/categories'>
         <p>Categories</p>
       </Link>
+
+      <Link to='/random'>
+        <p>Random Meal</p>
+      </Link>
      
      
     </div>

@@ -17,6 +17,10 @@ const Random = () => {
     fetchRecipes()
   }, [])
 
+  const refresh = () => {
+    window.location.reload(false);
+  }
+
   return (
      <section className="meals">
        {randomMeal.map((recipe) => {
@@ -28,8 +32,11 @@ const Random = () => {
              <h3>({strArea})</h3>
              <img src={strMealThumb} alt={strMeal} />
              <p>{strInstructions}</p>
+             <button className="newRandom" onClick={refresh}>New Meal</button>
            </article>
+           
          )
+         
        })}
        </section>
        

@@ -1,9 +1,11 @@
 import React from 'react';
-// import Random from './Components/Random';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
+import Random from './Components/Random';
 import Header from './Components/Header';
 import SearchForm from './Components/SearchForm';
 import SearchResults from './Components/SearchResults'
 import Categories from './Components/Categories'
+import Nav from './Components/Nav.jsx'
 
 
 const App = () => {
@@ -11,13 +13,14 @@ const App = () => {
 
   return (
     <div className="App">
-    
+    <Router>
     <Header />
-    <h1>Pick A Category:</h1>
+    <Nav />
     {/* <SearchForm />
     <SearchResults /> */}
     {/* <Random /> */}
-    <Categories />
+    <Route exact path='/categories' component={Categories}/>
+    </Router>
     </div>
   );
 }

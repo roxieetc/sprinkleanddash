@@ -1,15 +1,16 @@
 //All header elements and functions here
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 function Header() {
   
   const refresh = () => {
-    window.location.reload(false);
+    
   }
 
   return (
     <div className="Header">
-     <h2 className="appTitle" onClick={refresh}>Sprinkle and Dash</h2>
+     <Link to='/'><h2 className="appTitle">Sprinkle and Dash</h2></Link>
      {/* <div className="headerRight"><input type='text' placeholder="Search for recipes..."></input>
      <button>Search</button>
      </div> */}

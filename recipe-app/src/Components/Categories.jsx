@@ -18,7 +18,9 @@ function Categories() {
 
 
   return (
+    <div><h1>Pick A Category:</h1>
     <section className="categories">
+      
      {images.map((recipe) => {
          const {idCategory, strCategory, strCategoryThumb} = recipe
 
@@ -30,6 +32,7 @@ function Categories() {
          )
        })}
       </section> 
+      </div>
  );
 }
 

@@ -19,7 +19,7 @@ function Categories() {
 
 
   return (
-    <div><h1>Pick A Category:</h1>
+    <div><h1>Pick a Category:</h1>
     <section className="categories">
       
      {images.map((recipe) => {
@@ -27,7 +27,8 @@ function Categories() {
 
          return (
            <article className="catContainer" key={idCategory}>
-             <Link to={'/categories/' + strCategory}><h2>{strCategory}</h2>
+             <Link to={'/categories/' + strCategory}>
+                      <h2>{strCategory}</h2>
              <img src={strCategoryThumb} alt={strCategory} /></Link>
            </article>
          )

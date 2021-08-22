@@ -127,6 +127,7 @@ button {
   background: linear-gradient(to top, #dffdf3, #ffffff);
   color: rgb(19, 107, 103);
   box-shadow: 3px 2px 10px rgba(0, 0, 0, 0.05);
+  cursor: pointer;
 }
 
 .newRandom:hover {
@@ -189,4 +190,49 @@ button {
   color: rgb(151, 204, 201);
   text-align: center;
   height: 30px;
+}
+
+/* STYLING FOR INDIVIDUAL MEALS */
+
+.catMeals {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 70vh;
+}
+
+.catMealContainer {
+  text-align: center;
+  max-width: 300px;
+  max-height: 300px;
+  min-width: 300px;
+  min-height: 200px;
+  overflow: auto;
+  margin: auto;
+  margin-top: 80px;
+  border: solid 1px rgb(146, 185, 178);
+  border-radius: 50px;
+  padding-bottom: 15px;
+  margin: 20px 10px;
+  background: linear-gradient(to top, #dffdf3, #ffffff);
+  cursor: pointer;
+  box-shadow: 3px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.catMealContainer img {
+  max-width: 150px;
+  border-radius: 15px;
+}
+
+.catMealContainer h2 {
+  font-size: 18px;
+}
+
+.catMealContainer:hover {
+  border: solid 2px rgb(146, 185, 178);
+  box-shadow: 3px 2px 10px #dffdf3;
+  transform: scale(1.03);
 }

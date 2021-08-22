@@ -29,16 +29,17 @@ const Random = () => {
          return (
            <article className="mealContainer" key={idMeal}>
              
+             
+             
+             <div className="mealContainer1">
              <h2>{strMeal}</h2>
-             
              <h3>({strArea})</h3>
-             
              <img src={strMealThumb} alt={strMeal} />
-             
              <div className="instructions">
              <p>{strInstructions}</p>
              </div>
              
+             </div>
              <button className="newRandom" onClick={refresh}>New Meal</button>
            </article>
            

@@ -3,11 +3,11 @@ import { BrowserRouter as Router, Route } from 'react-router-dom';
 import Main from './Components/Main'
 import Random from './Components/Random';
 import Header from './Components/Header';
-import SearchForm from './Components/SearchForm';
-import SearchResults from './Components/SearchResults'
+// import SearchForm from './Components/SearchForm';
+// import SearchResults from './Components/SearchResults'
 import Categories from './Components/Categories'
 import Nav from './Components/Nav.jsx'
-import Footer from './Components/Footer'
+// import Footer from './Components/Footer'
 
 
 const App = () => {
@@ -24,7 +24,7 @@ const App = () => {
     <Route exact path='/categories' component={Categories}/>
     <Route exact path='/' component={Main} />
     </Router>
-    <Footer />
+    {/* <Footer /> */}
     </div>
   );
 }

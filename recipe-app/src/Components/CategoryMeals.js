@@ -6,7 +6,7 @@ const CategoryMeals = () => {
     return (
 
         <div className="CategoryMeals">
-
+                <p>CHECKING CHECKING TESTING WOW</p>
         </div>
 
     )

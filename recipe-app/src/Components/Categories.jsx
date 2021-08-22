@@ -1,5 +1,6 @@
 //displays categories that are searchable
 import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 
 
 function Categories() {
@@ -26,8 +27,8 @@ function Categories() {
 
          return (
            <article className="catContainer" key={idCategory}>
-             <h2>{strCategory}</h2>
-             <img src={strCategoryThumb} alt={strCategory} />
+             <Link to={'/categories/' + strCategory}><h2>{strCategory}</h2>
+             <img src={strCategoryThumb} alt={strCategory} /></Link>
            </article>
          )
        })}

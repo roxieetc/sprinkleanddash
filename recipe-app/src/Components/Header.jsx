@@ -10,7 +10,7 @@ function Header() {
 
   return (
     <div className="Header">
-     <Link to='/'><h2 className="appTitle">Sprinkle and Dash</h2></Link>
+     <Link to='/'><h2 className="appTitle">Sprinkle & Dash</h2></Link>
      {/* <div className="headerRight"><input type='text' placeholder="Search for recipes..."></input>
      <button>Search</button>
      </div> */}

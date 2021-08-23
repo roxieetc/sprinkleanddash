@@ -6,7 +6,9 @@ const Footer = () => {
 
 return (
     <div className='homepage'>
+        <div className='homepageContent'>
     <h1>Welcome to Sprinkle & Dash!</h1>
+   
     <img src={homepage1} alt="steak dinner" className="hp1img" />
     <p>Do you always struggle figuring out what to cook for dinner? Maybe you never know what exactly you're in the mood to eat, 
         or you just don't know what to do with the ingredients you have on hand? Well, you're not alone.
@@ -27,9 +29,11 @@ return (
     </p>
     <p>
         Our goal is to help the average person and families alike make meal decisions a little easier. With the busy lifestyles that we've all become
-        accustomed to, why not let someone else do the thinking for you at dinner time.
+        accustomed to, why not let someone else do the thinking for you at dinner time?
     </p>
     </div>
+    </div>
+
     </div>
 )
 }

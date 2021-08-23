@@ -1,5 +1,6 @@
 //Component that renders main page with random recipe generator
 import React, { useState, useEffect } from 'react';
+import youtubeplay from '../youtubeplay.png';
 
 const url = 'https://www.themealdb.com/api/json/v1/1/random.php'
 
@@ -24,7 +25,7 @@ const Random = () => {
   return (
      <section className="meals">
        {randomMeal.map((recipe) => {
-         const {idMeal, strMeal, strArea, strInstructions, strMealThumb} = recipe
+         const {idMeal, strMeal, strArea, strInstructions, strMealThumb, strYoutube} = recipe
 
          return (
            <article className="mealContainer" key={idMeal}>
@@ -37,6 +38,9 @@ const Random = () => {
              <img src={strMealThumb} alt={strMeal} />
              <div className="instructions">
              <p>{strInstructions}</p>
+             <div className="videobtn">
+             <a href={strYoutube} target="_blank" rel="noreferrer"><img src={youtubeplay} alt="youtube"/></a>
+             </div>
              </div>
              
              </div>

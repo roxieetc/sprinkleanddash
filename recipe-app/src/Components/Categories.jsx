@@ -19,7 +19,7 @@ function Categories() {
 
 
   return (
-    <div><h1>Pick a Category:</h1>
+    <div><h1 className="catPageTitle">Pick a Category:</h1>
     <section className="categories">
       
      {images.map((recipe) => {

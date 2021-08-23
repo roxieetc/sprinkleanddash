@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import youtubeplay from '../youtubeplay.png';
 
 const Recipe = ({ match }) => {
 
@@ -20,7 +21,7 @@ const [images, setImages] = useState([]);
             <section className="recipeMeals">
       
       {images.map((recipe) => {
-          const {strMeal, strMealThumb, strInstructions, strArea} = recipe
+          const {strMeal, strMealThumb, strInstructions, strArea, strYoutube} = recipe
  
           return (
             <article className="recipeContainer" key={strMeal}>
@@ -28,6 +29,9 @@ const [images, setImages] = useState([]);
               <h3>({strArea})</h3>
               <img src={strMealThumb} alt={strMeal} />
               <p>{strInstructions}</p>
+              <div className="videobtn">
+             <a href={strYoutube} target="_blank" rel="noreferrer"><img src={youtubeplay} alt="youtube"/></a>
+             </div>
             </article>
           )
         })}

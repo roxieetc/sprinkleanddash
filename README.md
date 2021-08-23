@@ -34,7 +34,7 @@ Sprinkle and Dash is a meal generator app designed with working families and peo
 
 ---
 
-#### Installation Instructions
+### Installation Instructions
 
 If you would like to work through this code yourself, it is a public project that is available for you to fork and clone for your own personal use or enlightenment.
 
@@ -42,7 +42,7 @@ Simply fork this repository to your own account, copy the link, and clone it dow
 
 ---
 
-#### Contribution Guidelines
+### Contribution Guidelines
 
 As mentioned above, if you would like to work on this code yourself, it is public and available for your use.
 

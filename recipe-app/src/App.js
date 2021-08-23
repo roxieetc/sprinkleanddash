@@ -7,7 +7,6 @@ import Categories from './Components/Categories';
 import Nav from './Components/Nav.jsx';
 import CategoryMeals from './Components/CategoryMeals';
 import Recipe from './Components/Recipe';
-// import Footer from './Components/Footer'
 
 
 const App = () => {
@@ -23,7 +22,6 @@ const App = () => {
     <Route exact path='/recipe/:meals' component={Recipe} />
     <Route exact path='/' component={Main} />
     </Router>
-    {/* <Footer /> */}
     </div>
   );
 }

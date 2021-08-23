@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 
 
 const CategoryMeals = ({ match }) => {
@@ -25,8 +26,10 @@ const CategoryMeals = ({ match }) => {
  
           return (
             <article className="catMealContainer" key={strMeal}>
+              <Link to={'/recipe/' + strMeal}>
               <h2>{strMeal}</h2>
               <img src={strMealThumb} alt={strMeal} />
+              </Link>
             </article>
           )
         })}

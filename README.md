@@ -4,23 +4,23 @@ Sprinkle and Dash is a meal generator app designed with working families and peo
 
 #### Homepage
 
-![homepage](recipe-app/src/screenshots/homepage.png)
+![homepage](src/screenshots/homepage.png)
 
 #### Categories
 
-![categories](recipe-app/src/screenshots/categories.png)
+![categories](src/screenshots/categories.png)
 
 #### Category Meals
 
-![categorymeals.png](recipe-app/src/screenshots/categorymeals.png)
+![categorymeals.png](src/screenshots/categorymeals.png)
 
 #### Recipe (from category meals)
 
-![recipe](recipe-app/src/screenshots/recipe.png)
+![recipe](src/screenshots/recipe.png)
 
 #### Random Meal
 
-![randommeal](recipe-app/src/screenshots/randommeal.png)
+![randommeal](src/screenshots/randommeal.png)
 
 ---
 
